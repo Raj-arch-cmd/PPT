@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android Development with Kotlin | GDG AIT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark blue-gray background */
+            color: #F3F4F6; /* Light gray text */
+        }
+        /* Animation classes */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .slide-section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem 1rem;
+            border-bottom: 1px solid #374151; /* Separator line between sections */
+        }
+        .slide-section:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Slide 1: Title Slide -->
+    <section id="slide1" class="slide-section text-center">
+        <div class="reveal">
+            <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-gray-300 mt-2 reveal" style="transition-delay: 400ms;">An Introduction to Android Development with Kotlin</h2>
+            <p class="mt-8 text-lg md:text-xl text-gray-400 reveal" style="transition-delay: 600ms;">Your gateway to mobile app creation.</p>
+            <p class="mt-12 text-md md:text-lg font-bold text-gray-100 reveal" style="transition-delay: 800ms;">
+                Raj Singh & Arsh Tiwari | GDG Army Institute Of Technology
+            </p>
+        </div>
+    </section>
+
+    <!-- Slide 2: Tech Behind Android -->
+    <section id="slide2" class="slide-section">
+        <div class="w-full max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-green-400 mb-10 text-center reveal">the tech used for our domain</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 reveal">
+                    <h3 class="text-xl font-bold text-green-400 mb-3">Integrated Development Environment (IDE)</h3>
+                    <p class="text-gray-300"><strong class="text-white">Android Studio:</strong> The official, all-in-one toolkit for building, testing, and debugging Android apps.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 reveal" style="transition-delay: 200ms;">
+                    <h3 class="text-xl font-bold text-green-400 mb-3">UI Development</h3>
+                    <p class="text-gray-300 mb-2"><strong class="text-white">Jetpack Compose:</strong> The modern, declarative way to build beautiful native UIs with less code. (Recommended!)</p>
+                     <p class="text-gray-300"><strong class="text-white">XML Layouts:</strong> The traditional method for designing user interfaces.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 reveal" style="transition-delay: 400ms;">
+                    <h3 class="text-xl font-bold text-green-400 mb-3">Core Framework</h3>
+                    <p class="text-gray-300"><strong class="text-white">Android Jetpack:</strong> A suite of libraries to help developers follow best practices and write high-quality apps easily (e.g., Room for databases, Navigation for app flow).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 3: The Language: Why Kotlin? -->
+    <section id="slide3" class="slide-section">
+        <div class="w-full max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-purple-400 mb-8 reveal">Why Kotlin? The Official Language of Modern Android</h2>
+            <ul class="space-y-6 text-left">
+                <li class="flex items-start gap-4 p-4 bg-gray-800 rounded-lg reveal" style="transition-delay: 200ms;">
+                    <svg class="w-6 h-6 text-purple-400 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                    <div><strong class="text-white">Preferred Language:</strong> In 2019, Google announced Kotlin as the preferred language for Android app development.</div>
+                </li>
+                <li class="flex items-start gap-4 p-4 bg-gray-800 rounded-lg reveal" style="transition-delay: 400ms;">
+                    <svg class="w-6 h-6 text-purple-400 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                    <div><strong class="text-white">Concise & Modern:</strong> Write more expressive and compact code compared to Java.</div>
+                </li>
+                <li class="flex items-start gap-4 p-4 bg-gray-800 rounded-lg reveal" style="transition-delay: 600ms;">
+                    <svg class="w-6 h-6 text-purple-400 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                    <div><strong class="text-white">100% Interoperable with Java:</strong> Mix Kotlin and Java code in the same project, making migration easy.</div>
+                </li>
+                <li class="flex items-start gap-4 p-4 bg-gray-800 rounded-lg reveal" style="transition-delay: 800ms;">
+                    <svg class="w-6 h-6 text-purple-400 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                    <div><strong class="text-white">Built for Concurrency:</strong> Kotlin Coroutines make complex background tasks simple and efficient.</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Slide 4: Future Opportunities -->
+    <section id="slide4" class="slide-section">
+        <div class="w-full max-w-5xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-green-400 mb-10 reveal">Future Opportunities: More Than Just Phones</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg reveal"><strong class="text-white">Massive User Base:</strong> Reach over 3 billion active Android devices worldwide.</div>
+                <div class="bg-gray-800 p-6 rounded-lg reveal" style="transition-delay: 150ms;"><strong class="text-white">Foldables & Tablets:</strong> Build adaptive UIs for larger screens.</div>
+                <div class="bg-gray-800 p-6 rounded-lg reveal" style="transition-delay: 300ms;"><strong class="text-white">Wear OS & TV:</strong> Expand to smartwatches and televisions.</div>
+                <div class="bg-gray-800 p-6 rounded-lg reveal" style="transition-delay: 450ms;"><strong class="text-white">Android Auto:</strong> Develop apps for the car dashboard.</div>
+                <div class="bg-gray-800 p-6 rounded-lg reveal" style="transition-delay: 600ms;"><strong class="text-white">AI/ML Integration:</strong> Use TensorFlow Lite for on-device machine learning.</div>
+                <div class="bg-gray-800 p-6 rounded-lg reveal" style="transition-delay: 750ms;"><strong class="text-white">Augmented Reality:</strong> Create immersive experiences with ARCore.</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Slide 5: Internships & Hackathons -->
+    <section id="slide5" class="slide-section">
+        <div class="w-full max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-purple-400 mb-10 text-center reveal">Get Involved & Kickstart Your Career</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="reveal" style="transition-delay: 200ms;">
+                    <h3 class="text-2xl font-bold text-white mb-4">Internship Opportunities</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li>Google Summer of Code (GSoC)</li>
+                        <li>Internshala, LinkedIn, and startup hiring</li>
+                        <li>Freelancing: Build & upload apps to Google Play Store</li>
+                    </ul>
+                </div>
+                <div class="reveal" style="transition-delay: 400ms;">
+                    <h3 class="text-2xl font-bold text-white mb-4">Hackathons</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li>Google Solution Challenge</li>
+                        <li>Smart India Hackathon</li>
+                        <li>Enliven (GDG events)</li>
+                        <li>College-level Hackathons (great for practice & networking)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 6: Thank You & Q&A -->
+    <section id="slide6" class="slide-section text-center">
+        <div class="reveal">
+            <h2 class="text-5xl font-black text-white mb-4 reveal" style="transition-delay: 200ms;">Thank You!</h2>
+            <p class="text-xl text-gray-300 mb-8 reveal" style="transition-delay: 400ms;">Let's build the future of mobile together.</p>
+            <p class="text-3xl font-bold text-green-400 reveal" style="transition-delay: 600ms;">Questions?</p>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript for revealing elements on scroll
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1 // Trigger when 10% of the element is visible
+        });
+
+        revealElements.forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
+
