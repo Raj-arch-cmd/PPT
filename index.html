@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Android Development with Kotlin | GDG AIT</title>
+    <title>CEP Presentation | CareerConnect</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,160 +30,249 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 4rem 1rem;
+            padding: 5rem 1.5rem;
             border-bottom: 1px solid #374151; /* Separator line between sections */
         }
         .slide-section:last-child {
             border-bottom: none;
+        }
+        li svg {
+            flex-shrink: 0;
         }
     </style>
 </head>
 <body class="antialiased">
 
     <!-- Slide 1: Title Slide -->
-    <section id="slide1" class="slide-section text-center">
+    <section class="slide-section text-center">
         <div class="reveal">
-            <h2 class="text-4xl md:text-6xl font-bold tracking-tight text-gray-300 mt-2 reveal" style="transition-delay: 400ms;">An Introduction to Android Development with Kotlin</h2>
-            <p class="mt-8 text-xl md:text-2xl text-gray-400 reveal" style="transition-delay: 600ms;">Your gateway to mobile app creation.</p>
-            <p class="mt-12 text-lg md:text-xl font-bold text-gray-100 reveal" style="transition-delay: 800ms;">
-                Raj Singh | GDG Army Institute Of Technology
-            </p>
-        </div>
-    </section>
+            <p class="text-3xl text-cyan-400 font-semibold tracking-wider">Community Engagement Project</p>
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-white mt-4">CareerConnect</h1>
+            <p class="mt-6 text-2xl md:text-3xl text-gray-300 max-w-3xl mx-auto">A Job & Skill Development Portal for Rural Employment and Empowerment</p>
+            
+            <img src="team-photo.jpg" alt="Team Photo" class="mx-auto my-8 rounded-xl shadow-lg max-w-lg w-full reveal">
 
-    <!-- Slide 2: Tech Behind Android -->
-    <section id="slide2" class="slide-section">
-        <div class="w-full max-w-5xl mx-auto">
-            <h2 class="text-5xl font-bold text-green-400 mb-10 text-center reveal">the tech used for our domain</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 reveal">
-                    <h3 class="text-2xl font-bold text-green-400 mb-3">Integrated Development Environment (IDE)</h3>
-                    <p class="text-lg text-gray-300"><strong class="text-white">Android Studio:</strong> The official, all-in-one toolkit for building, testing, and debugging Android apps.</p>
-                </div>
-                <!-- Card 2 -->
-                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 reveal" style="transition-delay: 200ms;">
-                    <h3 class="text-2xl font-bold text-green-400 mb-3">UI Development</h3>
-                    <p class="text-lg text-gray-300 mb-2"><strong class="text-white">Jetpack Compose:</strong> The modern, declarative way to build beautiful native UIs with less code. (Recommended!)</p>
-                     <p class="text-lg text-gray-300"><strong class="text-white">XML Layouts:</strong> The traditional method for designing user interfaces.</p>
-                </div>
-                <!-- Card 3 -->
-                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 reveal" style="transition-delay: 400ms;">
-                    <h3 class="text-2xl font-bold text-green-400 mb-3">Backend for Android Development</h3>
-                    <p class="text-lg text-gray-300"><strong class="text-white">Firebase:</strong> A popular Backend-as-a-Service (BaaS) for databases, auth, and more.</p>
-                    <p class="text-lg text-gray-300 mt-2"><strong class="text-white">Spring Boot / Node.js:</strong> Powerful frameworks for building custom backend APIs for your apps.</p>
-                </div>
+            <div class="mt-8 text-xl text-gray-100">
+                <p class="font-bold mb-2">Team Members:</p>
+                <p>Raj Singh [7242] • Sahil Poswal [7244]</p>
+                <p>Sreyash Singh [7251] • Sandeep Kumar [7245]</p>
             </div>
+            <p class="mt-8 text-2xl font-bold text-gray-200">Army Institute Of Technology</p>
         </div>
     </section>
 
-    <!-- Slide 3: The Language: Why Kotlin? -->
-    <section id="slide3" class="slide-section">
-        <div class="w-full max-w-4xl mx-auto text-center">
-            <h2 class="text-5xl font-bold text-purple-400 mb-8 reveal">Why Kotlin? The Official Language of Modern Android</h2>
-            <ul class="space-y-6 text-left">
-                <li class="flex items-start gap-4 p-4 bg-gray-800 rounded-lg reveal" style="transition-delay: 200ms;">
-                    <svg class="w-6 h-6 text-purple-400 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
-                    <div class="text-lg"><strong class="text-white">Preferred Language:</strong> In 2019, Google announced Kotlin as the preferred language for Android app development.</div>
-                </li>
-                <li class="flex items-start gap-4 p-4 bg-gray-800 rounded-lg reveal" style="transition-delay: 400ms;">
-                    <svg class="w-6 h-6 text-purple-400 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
-                    <div class="text-lg"><strong class="text-white">Concise & Modern:</strong> Write more expressive and compact code compared to Java.</div>
-                </li>
-                <li class="flex items-start gap-4 p-4 bg-gray-800 rounded-lg reveal" style="transition-delay: 600ms;">
-                    <svg class="w-6 h-6 text-purple-400 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
-                    <div class="text-lg"><strong class="text-white">100% Interoperable with Java:</strong> Mix Kotlin and Java code in the same project, making migration easy.</div>
-                </li>
-                <li class="flex items-start gap-4 p-4 bg-gray-800 rounded-lg reveal" style="transition-delay: 800ms;">
-                    <svg class="w-6 h-6 text-purple-400 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
-                    <div class="text-lg"><strong class="text-white">Built for Concurrency:</strong> Kotlin Coroutines make complex background tasks simple and efficient.</div>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Slide 4: Future Opportunities -->
-    <section id="slide4" class="slide-section">
+    <!-- Slide 2: Introduction -->
+    <section class="slide-section">
         <div class="w-full max-w-5xl mx-auto text-center">
-            <h2 class="text-5xl font-bold text-green-400 mb-10 reveal">Future Opportunities: More Than Just Phones</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-lg">
-                <div class="bg-gray-800 p-6 rounded-lg reveal"><strong class="text-white">Massive User Base:</strong> Reach over 3 billion active Android devices worldwide.</div>
-                <div class="bg-gray-800 p-6 rounded-lg reveal" style="transition-delay: 150ms;"><strong class="text-white">Foldables & Tablets:</strong> Build adaptive UIs for larger screens.</div>
-                <div class="bg-gray-800 p-6 rounded-lg reveal" style="transition-delay: 300ms;"><strong class="text-white">Wear OS & TV:</strong> Expand to smartwatches and televisions.</div>
-                <div class="bg-gray-800 p-6 rounded-lg reveal" style="transition-delay: 450ms;"><strong class="text-white">Android Auto:</strong> Develop apps for the car dashboard.</div>
-                <div class="bg-gray-800 p-6 rounded-lg reveal" style="transition-delay: 600ms;"><strong class="text-white">AI/ML Integration:</strong> Use TensorFlow Lite for on-device machine learning.</div>
-                <div class="bg-gray-800 p-6 rounded-lg reveal" style="transition-delay: 750ms;"><strong class="text-white">Augmented Reality:</strong> Create immersive experiences with ARCore.</div>
+            <h2 class="text-5xl font-bold text-cyan-400 mb-10 reveal">Introduction</h2>
+            <div class="grid md:grid-cols-2 gap-8 text-left">
+                <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 reveal">
+                    <h3 class="text-3xl font-bold text-white mb-3">Project Aim</h3>
+                    <p class="text-xl text-gray-300">To develop an inclusive, multilingual job portal that helps rural citizens access verified job opportunities, employer reviews, vocational training, and employment news, bridging the information gap.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 reveal" style="transition-delay: 200ms;">
+                    <h3 class="text-3xl font-bold text-white mb-3">Importance</h3>
+                    <p class="text-xl text-gray-300">Empowering rural communities with reliable information is key to unlocking their potential. This project supports skill enhancement and provides a direct path to economic development and stability.</p>
+                </div>
             </div>
         </div>
     </section>
     
-    <!-- Slide 5: Project Showcase -->
-    <section id="slide5" class="slide-section">
+    <!-- Slide 3: Topic Finalization -->
+    <section class="slide-section">
         <div class="w-full max-w-4xl mx-auto text-center">
-            <h2 class="text-5xl font-bold text-blue-400 mb-10 reveal">Projects From Our Domain</h2>
-            <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 reveal text-left">
-                <h3 class="text-3xl font-bold text-white mb-4">Project Example: Expense Tracker App</h3>
-                <p class="text-lg text-gray-300 mb-4">
-                    A practical application designed to help users monitor their weekly, monthly, and yearly expenses. This provides a clear financial overview and promotes better budgeting habits.
-                </p>
-                <div class="flex flex-wrap gap-4 mt-6">
-                    <span class="bg-blue-900/50 text-blue-300 text-base font-medium px-3 py-1 rounded-full">Jetpack Compose</span>
-                    <span class="bg-blue-900/50 text-blue-300 text-base font-medium px-3 py-1 rounded-full">Room Database</span>
-                    <span class="bg-blue-900/50 text-blue-300 text-base font-medium px-3 py-1 rounded-full">Kotlin</span>
-                </div>
+            <h2 class="text-5xl font-bold text-cyan-400 mb-8 reveal">Topic Finalization</h2>
+            <div class="text-left bg-gray-800 p-8 rounded-lg reveal">
+                <h3 class="text-3xl font-bold text-white mb-4">How was the topic decided?</h3>
+                <ul class="space-y-4 text-xl text-gray-300">
+                    <li class="flex items-start gap-3"><svg class="w-7 h-7 text-cyan-400 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" /></svg><span>Initial field observations and discussions within the team highlighted significant employment challenges in rural areas.</span></li>
+                    <li class="flex items-start gap-3"><svg class="w-7 h-7 text-cyan-400 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" /></svg><span>Based on our "Need Analysis," we identified a critical demand for a centralized, trustworthy platform to address the lack of reliable job information.</span></li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Slide 6: Internships & Hackathons -->
-    <section id="slide6" class="slide-section">
+    <!-- Slide 4: Motivation -->
+    <section class="slide-section">
+        <div class="w-full max-w-4xl mx-auto text-center">
+            <h2 class="text-5xl font-bold text-cyan-400 mb-8 reveal">Motivation</h2>
+            <div class="text-left text-xl text-gray-300 space-y-4 bg-gray-800 p-8 rounded-lg reveal">
+                <p>Unemployment and underemployment are significant issues in rural areas. We observed that most job-seekers rely on unreliable word-of-mouth information, making them vulnerable to delays and scams.</p>
+                <p>Furthermore, there is limited awareness of valuable skill development programs and viable career paths in non-traditional fields like sports. This information gap restricts employability and leads to missed potential in rural communities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 5: Problem Statement -->
+    <section class="slide-section">
+        <div class="w-full max-w-4xl mx-auto text-center">
+            <h2 class="text-5xl font-bold text-cyan-400 mb-8 reveal">Problem Statement</h2>
+            <div class="text-center text-2xl text-gray-200 bg-gray-800 border border-cyan-500/30 p-8 rounded-lg reveal">
+                <p>"Rural populations face significant barriers to employment due to a lack of timely access to verified job opportunities, skill development programs, and career guidance, leading to underemployment and missed potential."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 6: Related Information & Statistics -->
+    <section class="slide-section">
+        <div class="w-full max-w-4xl mx-auto text-center">
+            <h2 class="text-5xl font-bold text-cyan-400 mb-8 reveal">Related Information & Statistics</h2>
+             <div class="text-left bg-gray-800 p-8 rounded-lg reveal">
+                <h3 class="text-3xl font-bold text-white mb-4">Key Insights from Need Analysis:</h3>
+                <ul class="space-y-4 text-xl text-gray-300">
+                    <li class="flex items-start gap-3"><strong class="text-cyan-400 text-3xl font-black">70%</strong><span>of rural job seekers depend on local, often unreliable, networks for job information.</span></li>
+                    <li class="flex items-start gap-3"><strong class="text-cyan-400 text-3xl font-black">Trust</strong><span>is a major issue, with a widespread fear of job scams and unreliable employers.</span></li>
+                     <li class="flex items-start gap-3"><strong class="text-cyan-400 text-3xl font-black">Access</strong><span>to information about vocational training and government schemes is poorly publicized and difficult to find.</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Slide 7: NGOs & Government Schemes -->
+    <section class="slide-section">
+        <div class="w-full max-w-4xl mx-auto text-center">
+             <h2 class="text-5xl font-bold text-cyan-400 mb-8 reveal">NGOs & Government Schemes</h2>
+             <p class="text-2xl text-gray-300 reveal">Our platform will help centralize information about valuable government and NGO initiatives, such as:</p>
+             <div class="grid md:grid-cols-2 gap-6 mt-8 text-xl">
+                <div class="bg-gray-800 p-6 rounded-lg reveal" style="transition-delay: 200ms;">
+                    <h3 class="font-bold text-white mb-2">Government Schemes</h3>
+                    <p class="text-gray-400">Skill India Mission, Pradhan Mantri Kaushal Vikas Yojana (PMKVY), Khelo India, etc.</p>
+                </div>
+                 <div class="bg-gray-800 p-6 rounded-lg reveal" style="transition-delay: 400ms;">
+                    <h3 class="font-bold text-white mb-2">NGO Programs</h3>
+                    <p class="text-gray-400">Partnerships with local NGOs and Self-Help Groups (SHGs) for training and awareness.</p>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- Slide 8: Survey Details -->
+    <section class="slide-section">
+         <div class="w-full max-w-4xl mx-auto text-center">
+            <h2 class="text-5xl font-bold text-cyan-400 mb-8 reveal">Survey Details</h2>
+             <div class="text-left bg-gray-800 p-8 rounded-lg reveal text-xl">
+                <ul class="space-y-3 text-gray-300">
+                    <li><strong class="text-white w-40 inline-block">Area:</strong> [Target Village/Region Name]</li>
+                    <li><strong class="text-white w-40 inline-block">Duration:</strong> [Dates of Survey]</li>
+                    <li><strong class="text-white w-40 inline-block">Sample Size:</strong> [XX] Families, [XX] Respondents</li>
+                    <li><strong class="text-white w-40 inline-block">Methodology:</strong> Door-to-door surveys, structured questionnaires, and group discussions to understand user needs and digital literacy levels.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 9: Survey Findings -->
+    <section class="slide-section">
+        <div class="w-full max-w-4xl mx-auto text-center">
+            <h2 class="text-5xl font-bold text-cyan-400 mb-8 reveal">Key Survey Findings</h2>
+            <div class="grid md:grid-cols-2 gap-6 text-xl">
+                 <div class="bg-gray-800 p-6 rounded-lg reveal" style="transition-delay: 200ms;">
+                    <h3 class="font-bold text-white mb-2">Digital Access</h3>
+                    <p class="text-gray-300">Many residents own smartphones but have low digital literacy, preferring simple, icon-based interfaces and regional languages.</p>
+                </div>
+                 <div class="bg-gray-800 p-6 rounded-lg reveal" style="transition-delay: 400ms;">
+                    <h3 class="font-bold text-white mb-2">Information Gap</h3>
+                    <p class="text-gray-300">A strong interest was expressed for a single platform providing verified job listings, training info, and employee reviews to build trust.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Slide 10 & 11: Survey Photographs -->
+    <section class="slide-section">
+        <div class="w-full max-w-4xl mx-auto text-center">
+             <h2 class="text-5xl font-bold text-cyan-400 mb-8 reveal">Photographs from the Survey</h2>
+             <div class="bg-gray-800 p-12 rounded-lg reveal">
+                <p class="text-2xl text-gray-400">[Real photos from field visits, interactions with villagers, and team discussions will be displayed here.]</p>
+             </div>
+        </div>
+    </section>
+
+    <!-- Slide 12: Solution Proposed -->
+    <section class="slide-section">
         <div class="w-full max-w-5xl mx-auto">
-            <h2 class="text-5xl font-bold text-purple-400 mb-10 text-center reveal">Get Involved & Kickstart Your Career</h2>
+            <h2 class="text-5xl font-bold text-center text-cyan-400 mb-10 reveal">Proposed Solution: CareerConnect</h2>
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="reveal" style="transition-delay: 200ms;">
-                    <h3 class="text-3xl font-bold text-white mb-4">Internship Opportunities</h3>
-                    <ul class="list-disc list-inside space-y-2 text-lg text-gray-300">
-                        <li>Google Summer of Code (GSoC)</li>
-                        <li>Internshala, LinkedIn, and startup hiring</li>
-                        <li>Freelancing: Build & upload apps to Google Play Store</li>
-                    </ul>
+                <div class="reveal">
+                    <h3 class="text-3xl font-bold text-white mb-4">A Responsive, Multilingual Job Portal</h3>
+                    <p class="text-xl text-gray-300 mb-6">Designed for rural users with an intuitive, icon-based interface. Key features include verified job listings, employee reviews, vocational training calendars, and a dedicated section on careers in sports.</p>
                 </div>
-                <div class="reveal" style="transition-delay: 400ms;">
-                    <h3 class="text-3xl font-bold text-white mb-4">Hackathons</h3>
-                    <ul class="list-disc list-inside space-y-2 text-lg text-gray-300">
-                        <li>Google Solution Challenge</li>
-                        <li>Smart India Hackathon</li>
-                        <li>Enliven (GDG events)</li>
-                        <li>College-level Hackathons (great for practice & networking)</li>
-                    </ul>
+                <div class="reveal" style="transition-delay: 200ms;">
+                    <h3 class="text-3xl font-bold text-white mb-4">Technologies Used</h3>
+                    <div class="flex flex-wrap gap-3">
+                         <span class="bg-cyan-900/50 text-cyan-300 text-lg font-medium px-4 py-2 rounded-full">VS Code</span>
+                         <span class="bg-cyan-900/50 text-cyan-300 text-lg font-medium px-4 py-2 rounded-full">Figma</span>
+                         <span class="bg-cyan-900/50 text-cyan-300 text-lg font-medium px-4 py-2 rounded-full">Firebase</span>
+                         <span class="bg-cyan-900/50 text-cyan-300 text-lg font-medium px-4 py-2 rounded-full">GitHub</span>
+                         <span class="bg-cyan-900/50 text-cyan-300 text-lg font-medium px-4 py-2 rounded-full">Netlify</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- Slide 13: Future Work -->
+    <section class="slide-section">
+        <div class="w-full max-w-4xl mx-auto text-center">
+            <h2 class="text-5xl font-bold text-cyan-400 mb-8 reveal">Future Work</h2>
+            <div class="text-left bg-gray-800 p-8 rounded-lg reveal text-xl space-y-3 text-gray-300">
+                <p><strong class="text-white">Awareness Campaigns:</strong> Design and distribute posters and guides in local communities.</p>
+                <p><strong class="text-white">Pilot Deployment:</strong> Conduct training sessions and community demos to encourage portal registration.</p>
+                <p><strong class="text-white">Feedback & Iteration:</strong> Collect user feedback to make continuous improvements and plan for a larger scale-up.</p>
+            </div>
+        </div>
+    </section>
 
-    <!-- Slide 7: Thank You & Q&A -->
-    <section id="slide7" class="slide-section text-center">
+    <!-- Slide 14: Conclusion -->
+    <section class="slide-section">
+        <div class="w-full max-w-4xl mx-auto text-center">
+            <h2 class="text-5xl font-bold text-cyan-400 mb-8 reveal">Conclusion</h2>
+            <div class="text-2xl text-gray-200 bg-gray-800 p-8 rounded-lg reveal">
+                <p>CareerConnect aims to empower rural youth and job-seekers by bridging the information and accessibility gap. This initiative, backed by user research and human-centered design, has the potential to drive real, sustainable impact in community development and employment readiness.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 15: Acknowledgment -->
+    <section class="slide-section">
+        <div class="w-full max-w-4xl mx-auto text-center">
+            <h2 class="text-5xl font-bold text-cyan-400 mb-8 reveal">Acknowledgment</h2>
+            <p class="text-2xl text-gray-300 reveal">We extend our sincere thanks to the villagers for their time and valuable insights, our faculty mentors for their guidance, and our dedicated team members for their hard work and collaboration.</p>
+        </div>
+    </section>
+
+    <!-- Slide 16: References -->
+     <section class="slide-section">
+        <div class="w-full max-w-4xl mx-auto text-center">
+            <h2 class="text-5xl font-bold text-cyan-400 mb-8 reveal">References</h2>
+            <div class="text-left bg-gray-800 p-8 rounded-lg reveal text-xl text-gray-300">
+                <ul class="list-disc list-inside">
+                    <li>Government Reports on Rural Employment</li>
+                    <li>NGO Websites and Publications</li>
+                    <li>Primary Survey Data Collected During Field Visits</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 17: Thank You & Q&A -->
+    <section class="slide-section text-center">
         <div class="reveal">
-            <h2 class="text-6xl font-black text-white mb-4 reveal" style="transition-delay: 200ms;">Thank You!</h2>
-            <p class="text-2xl text-gray-300 mb-8 reveal" style="transition-delay: 400ms;">Let's build the future of mobile together.</p>
-            <p class="text-4xl font-bold text-green-400 reveal" style="transition-delay: 600ms;">Questions?</p>
+            <h2 class="text-7xl font-black text-white mb-4 reveal" style="transition-delay: 200ms;">Thank You!</h2>
+            <p class="text-5xl font-bold text-cyan-400 reveal" style="transition-delay: 400ms;">Questions?</p>
         </div>
     </section>
 
     <script>
         // JavaScript for revealing elements on scroll
         const revealElements = document.querySelectorAll('.reveal');
-
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
                 }
             });
-        }, {
-            threshold: 0.1 // Trigger when 10% of the element is visible
-        });
-
+        }, { threshold: 0.1 });
         revealElements.forEach(element => {
             observer.observe(element);
         });
@@ -191,4 +280,6 @@
 
 </body>
 </html>
+
+
 
